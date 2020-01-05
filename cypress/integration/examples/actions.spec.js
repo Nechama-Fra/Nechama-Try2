@@ -31,7 +31,7 @@ context('Actions', () => {
       // like whether the input is visible or disabled
       .type('disabled error checking', { force: true })
       .should('have.value', 'disabled error checking')
-  })
+  }) 
 
   it('.focus() - focus on a DOM element', () => {
     // https://on.cypress.io/focus
@@ -42,7 +42,7 @@ context('Actions', () => {
 
   it('.blur() - blur off a DOM element', () => {
     // https://on.cypress.io/blur
-    cy.get('.action-blur').type('About to blur').blur()
+    cy.get('.action-blurr').type('About to blur').blur()
       .should('have.class', 'error')
       .prev().should('have.attr', 'style', 'color: red;')
   })
